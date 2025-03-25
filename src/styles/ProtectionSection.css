@@ -1,0 +1,30 @@
+/* Ajusta la posición de los puntos/indicadores para que no se superpongan con el badge */
+.image-gallery-bullets {
+    bottom: -60px !important; /* Añadimos !important para forzar el estilo */
+    z-index: 10 !important;
+  }
+  
+  /* Ajusta el contenedor de los puntos para que se vean bien */
+  .image-gallery-bullets .image-gallery-bullet {
+    background-color: #ccc; /* Color de los puntos inactivos */
+    border: none; /* Quita el borde por defecto */
+    margin: 0 5px; /* Espacio entre los puntos */
+    width: 8px; /* Tamaño de los puntos */
+    height: 8px;
+  }
+  
+  .image-gallery-bullets .image-gallery-bullet.active {
+    background-color: #0891b2; /* Color del punto activo (cyan-600 de Tailwind) */
+  }
+  
+  /* Asegura que las imágenes de la galería se ajusten correctamente */
+  .image-gallery-slide img {
+    object-fit: contain; /* Asegura que las imágenes se ajusten sin recortarse */
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Limita la altura máxima */
+  }
+  
+  .image-gallery {
+    width: 100%;
+  }
