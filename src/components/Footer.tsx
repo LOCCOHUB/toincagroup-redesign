@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 pt-16 md:px-6">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Logo y descripción */}
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-white">
@@ -62,29 +62,6 @@ const Footer = () => {
                 <span className="text-gray-400">toinca@toinca.com</span>
               </li>
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Recibe nuestras novedades</h3>
-            <p className="text-gray-400">
-              Suscríbete a nuestro newsletter para estar al día de todas nuestras novedades y promociones.
-            </p>
-            <div className="flex items-center">
-              <input
-                type="email"
-                placeholder="Tu email"
-                className="w-full rounded-l-lg border-0 bg-gray-800 px-4 py-2 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <button
-                type="button"
-                className="rounded-r-lg bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
 
