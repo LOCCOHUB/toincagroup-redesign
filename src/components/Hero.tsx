@@ -39,7 +39,7 @@ const Hero = () => {
               Suministros <span className="text-blue-600">Integrales</span> para la Industria Alimentaria
             </h1>
             <p className="max-w-xl text-lg text-gray-600">
-              Medición y Pesaje - Disposiivos de Control - Equipos y Material de Laboratorio - Protección Food Use - SAT.
+              Medición y Pesaje - Dispositivos de Control - Equipos y Material de Laboratorio - Protección Food Use - SAT.
               Útiles de limpieza VIKAN. Detectables RETREEVA GLOBAL. Con la mejor relación calidad-precio.
             </p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
