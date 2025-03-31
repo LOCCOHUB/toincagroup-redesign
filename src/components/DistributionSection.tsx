@@ -5,24 +5,24 @@ import "../styles/DistributionSection.css";
 const DistributionSection = () => {
   const distributions = [
     {
-      title: "Distribución de Producto X",
-      description: "Somos distribuidores oficiales de Producto X en España y Portugal.",
+      title: "Detectables Retreeva",
+      description: "Líder mundial en bolígrafos y marcadores detectables.",
     },
     {
-      title: "Distribución de Producto Y",
-      description: "También distribuimos Producto Y, líder en su categoría a nivel mundial.",
+      title: "Utensilos de limpieza Vikan",
+      description: "También distribuimos productos Vikan, líder en su categoría a nivel mundial.",
     },
   ];
 
   // Array de imágenes para la galería
   const images = [
     {
-      original: "/images/vicam-toinca.png", // Cambia esto por la ruta de la imagen real
-      thumbnail: "/images/vicam-toinca.png",
+      original: "/images/retreeva-toinca-full.png", // Cambia esto por la ruta de la imagen real
+      thumbnail: "/images/retreeva-toinca-full.png",
     },
     {
-      original: "/images/retreeva-toinca.png", // Cambia esto por la ruta de la imagen real
-      thumbnail: "/images/retreeva-toinca.png",
+      original: "/images/retreeva-toinca-cepillos.png", // Cambia esto por la ruta de la imagen real
+      thumbnail: "/images/retreeva-toinca-cepillos.png",
     },
   ];
 
@@ -38,7 +38,7 @@ const DistributionSection = () => {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="order-2 space-y-6 md:order-2">
             <div data-aos="fade-left" className="inline-flex rounded-full bg-blue-100 px-3 py-1 text-sm font-semibold text-blue-800">
-              DISTRIBUCIÓN
+              MÁS PROTECCIÓN
             </div>
             <h2 data-aos="fade-left" data-aos-delay="100" className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
               Distribuimos las Mejores Marcas

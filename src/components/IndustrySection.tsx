@@ -81,7 +81,7 @@ const IndustrySection = () => {
             <div data-aos="fade-right" className="rounded-xl bg-white p-4 shadow-md">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src="https://ext.same-assets.com/2935114617/3450332310.jpeg"
+                  src="/images/fibosa-maquinaria-toinca.png"
                   alt="Maquinaria industrial alimentaria"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                 />
@@ -96,9 +96,9 @@ const IndustrySection = () => {
               <ul className="space-y-3">
                 {[
                   'Maquinaria de las mejores marcas del mercado',
-                  'Instalaciones adaptadas a sus necesidades',
-                  'Fabricación a medida en acero inoxidable',
-                  'Consumibles certificados para uso alimentario',
+                  'Equipamiento para su industria y su personal',
+                  'Instalaciones y fabricaciones inox. a medida',
+                  'Consumibles, EPI´s… certificados para uso alimentario',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
                     <svg

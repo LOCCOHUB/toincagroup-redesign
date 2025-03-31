@@ -49,7 +49,7 @@ const LabSection = () => {
   };
 
   return (
-    <section id="laboratorio" className="bg-white py-16 md:py-24">
+    <section id="control-seguridad" className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <div data-aos="fade-up" className="inline-flex rounded-full bg-indigo-100 px-3 py-1 text-sm font-semibold text-indigo-800">

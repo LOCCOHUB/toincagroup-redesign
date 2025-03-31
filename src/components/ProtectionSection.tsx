@@ -33,8 +33,8 @@ const ProtectionSection = () => {
       thumbnail: "/images/topdog-bata.png",
     },
     {
-      original: "/images/topdog-mandil.jpg",
-      thumbnail: "/images/topdog-mandil.jpg",
+      original: "/images/topdog-bata-AZUL-TLB.png",
+      thumbnail: "/images/topdog-bata-AZUL-TLB.png",
     },
   ];
 
@@ -50,10 +50,10 @@ const ProtectionSection = () => {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="order-2 space-y-6 md:order-1">
             <div data-aos="fade-right" className="inline-flex rounded-full bg-cyan-100 px-3 py-1 text-sm font-semibold text-cyan-800">
-              PROTECCIÓN TOP DOG
+              PROTECCIÓN
             </div>
             <h2 data-aos="fade-right" data-aos-delay="100" className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
-              Prendas Protectoras de Alto Rendimiento
+              Protección Toinca TopDog
             </h2>
             <p data-aos="fade-right" data-aos-delay="150" className="text-gray-600">
               Somos Distribuidor Oficial para España y Portugal de la gama de productos Top Dog.
@@ -152,7 +152,7 @@ const ProtectionSection = () => {
                     <svg className="mr-2 h-4 w-4 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
-                    <span>Alta durabilidad</span>
+                    <span>Reutilizable. Impermeable</span>
                   </li>
                   <li className="flex items-center">
                     <svg className="mr-2 h-4 w-4 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

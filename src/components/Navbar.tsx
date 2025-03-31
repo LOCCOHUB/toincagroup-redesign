@@ -26,19 +26,23 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-blue-600">
-              TOINCA<span className="text-gray-800">GROUP</span>
+            <a href="#">
+              <img
+                src="/images/logo-toinca-principal.png"
+                alt="Toinca Group Logo"
+                className="h-12 w-auto"
+              />
             </a>
           </div>
 
           {/* Navegación de escritorio */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              {['Home', 'Industria Alimentaria', 'Laboratorio', 'Protección', 'Servicio Técnico', 'Contacto'].map(
+              {['Home', 'Industria Alimentaria', 'Control/Seguridad', 'Protección', 'Servicio Técnico', 'Contacto'].map(
                 (item, index) => (
                   <li key={index}>
                     <a
-                      href={`#${item.toLowerCase().replace(' ', '-')}`}
+                      href={`#${item.toLowerCase().replace(' ', '-').replace('/', '-')}`}
                       className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
                     >
                       {item}
@@ -75,11 +79,11 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 rounded-lg bg-white p-4 shadow-lg">
             <ul className="space-y-4">
-              {['Home', 'Industria Alimentaria', 'Laboratorio', 'Protección', 'Servicio Técnico', 'Contacto'].map(
+              {['Home', 'Industria Alimentaria', 'Control/Seguridad', 'Protección', 'Servicio Técnico', 'Contacto'].map(
                 (item, index) => (
                   <li key={index}>
                     <a
-                      href={`#${item.toLowerCase().replace(' ', '-')}`}
+                      href={`#${item.toLowerCase().replace(' ', '-').replace('/', '-')}`}
                       className="block py-2 text-gray-700 hover:text-blue-600"
                       onClick={() => setIsMenuOpen(false)}
                     >

@@ -6,8 +6,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
         </svg>
       ),
-      title: 'Maquinaria y Equipamiento',
-      description: 'Suministramos toda la maquinaria necesaria para la industria alimentaria. Disponemos de las mejores marcas del mercado.',
+      title: 'Equipamiento y Maquinaria',
+      description: 'Todo lo necesario para el óptimo rendimiento de una industria alimentaria y de su personal. Trabajamos con las marcas más reconocidas del mercado.',
     },
     {
       icon: (
@@ -15,8 +15,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
         </svg>
       ),
-      title: 'Laboratorio',
-      description: 'Equipos y aparatos para laboratorio con garantía de calidad y fiabilidad. Trabajamos con los mejores proveedores del sector.',
+      title: 'Seguridad/Control',
+      description: 'Pesaje. Medición. Dispositivos de control. Equipos y material de Laboratorio. Trabajamos con los mejores proveedores del sector.',
     },
     {
       icon: (
@@ -24,8 +24,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
         </svg>
       ),
-      title: 'Protección Top Dog',
-      description: 'Prendas protectoras de alto rendimiento para uso en contacto con alimentos. Ligeros, resistentes y duraderos.',
+      title: 'Protección',
+      description: 'PPrendas y cubres de alto rendimiento Toinca TopDog.  Útiles de limpieza. Detectables.',
     },
     {
       icon: (
@@ -47,7 +47,7 @@ const Services = () => {
             Nuestros Servicios
           </h2>
           <p data-aos="fade-up" data-aos-delay="100" className="mt-4 text-lg text-gray-600">
-            Ofrecemos soluciones integrales para la industria alimentaria, con más de 35 años de experiencia en el sector.
+          Desde 1986 procurando soluciones integrales para la industria alimentaria. Especializados en la industria Cárnica.
           </p>
         </div>
 
