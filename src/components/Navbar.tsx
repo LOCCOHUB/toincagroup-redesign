@@ -30,7 +30,7 @@ const Navbar = () => {
               <img
                 src="/images/logo-toinca-principal.png"
                 alt="Toinca Group Logo"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </a>
           </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
                   <li key={index}>
                     <a
                       href={`#${item.toLowerCase().replace(' ', '-').replace('/', '-')}`}
-                      className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
+                      className="text-sm font-medium text-gray-700 transition-colors hover:text-[#de3542]"
                     >
                       {item}
                     </a>
@@ -84,7 +84,7 @@ const Navbar = () => {
                   <li key={index}>
                     <a
                       href={`#${item.toLowerCase().replace(' ', '-').replace('/', '-')}`}
-                      className="block py-2 text-gray-700 hover:text-blue-600"
+                      className="block py-2 text-gray-700 hover:text-[#de3542]"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item}

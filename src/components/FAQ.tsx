@@ -58,15 +58,14 @@ const FAQ = () => {
                   <span className="mr-8 font-semibold">{item.question}</span>
                   <span className="flex h-7 w-7 items-center justify-center rounded-full border border-gray-200">
                     <svg
-                      className={`h-5 w-5 text-blue-600 transition-transform ${
+                      className={`h-5 w-5 text-[#de3542] transition-transform ${
                         openIndex === index ? 'rotate-180' : ''
                       }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
                   </span>
                 </button>
@@ -88,17 +87,11 @@ const FAQ = () => {
           <p className="mb-4 text-lg text-gray-600">¿No encuentra respuesta a su pregunta?</p>
           <a
             href="#contacto"
-            className="inline-flex items-center rounded-lg bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-md transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+            className="inline-flex items-center rounded-lg bg-[#de3542] px-6 py-3 text-base font-medium text-white shadow-md transition-colors hover:brightness-90 focus:outline-none focus:ring-2 focus:ring-[#de3542] focus:ring-offset-2"
           >
             Contáctanos
-            <svg
-              className="ml-2 h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </a>
         </div>
@@ -108,7 +101,7 @@ const FAQ = () => {
           <h3 className="mb-6 text-center text-xl font-bold text-gray-900">Nuestro portfolio de productos</h3>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-lg bg-gray-50 p-6">
-              <h4 className="mb-3 font-bold text-blue-600">Área Alimentaria</h4>
+              <h4 className="mb-3 font-bold text-[#de3542]">Área Alimentaria</h4>
               <ul className="list-inside list-disc text-gray-600">
                 <li>Maquinaria</li>
                 <li>Equipamiento e Instalaciones</li>
@@ -120,7 +113,7 @@ const FAQ = () => {
               </ul>
             </div>
             <div className="rounded-lg bg-gray-50 p-6">
-              <h4 className="mb-3 font-bold text-indigo-600">Área de Laboratorio</h4>
+              <h4 className="mb-3 font-bold text-[#de3542]">Área de Laboratorio</h4>
               <ul className="list-inside list-disc text-gray-600">
                 <li>Equipos</li>
                 <li>Aparatos</li>
@@ -130,7 +123,7 @@ const FAQ = () => {
               </ul>
             </div>
             <div className="rounded-lg bg-gray-50 p-6">
-              <h4 className="mb-3 font-bold text-cyan-600">Protección TopDogMfg</h4>
+              <h4 className="mb-3 font-bold text-[#de3542]">Protección TopDogMfg</h4>
               <p className="text-gray-600">
                 Distribuidores exclusivos de prendas de alto rendimiento y durabilidad para uso en contacto con Alimentos. Made in Canadá.
               </p>
