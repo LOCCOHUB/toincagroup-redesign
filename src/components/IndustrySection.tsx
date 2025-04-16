@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react';
-
 const IndustrySection = () => {
   const features = [
     {
@@ -52,7 +50,7 @@ const IndustrySection = () => {
   ];
 
   return (
-    <section id="industria-alimentaria" className="relative overflow-hidden bg-white py-16 md:py-24">
+    <section id="industria-alimentaria" className="relative bg-white py-16 md:py-24">
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex rounded-full bg-red-100 px-3 py-1 text-sm font-semibold text-[#de3542]">
@@ -66,6 +64,7 @@ const IndustrySection = () => {
           </p>
         </div>
 
+        {/* FEATURES */}
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div
@@ -81,71 +80,81 @@ const IndustrySection = () => {
           ))}
         </div>
 
-        <div className="mt-16">
-          <div className="grid items-center gap-8 md:grid-cols-2">
-            {/* Carrusel de imágenes */}
-            <div className="relative overflow-hidden rounded-xl bg-white p-4 shadow-md">
-              <div className="relative w-full overflow-hidden">
-                <div className="animate-scroll-x flex w-max gap-8">
-                  {[...images, ...images].map((img, i) => (
-                    <img
-                      key={i}
-                      src={`/images/${img}`}
-                      alt={`Carrusel ${i}`}
-                      className="h-64 w-full max-w-[480px] rounded-lg object-cover"
-                    />
-                  ))}
-                </div>
-              </div>
+        {/* SLIDER & TEXTO */}
+        <div className="mt-16 grid items-center gap-8 md:grid-cols-2">
+          {/* SLIDER automático tipo loop */}
+          <div className="overflow-hidden rounded-xl bg-white p-4 shadow-md">
+            <div className="flex animate-scroll-x gap-4 w-max">
+              {[...images, ...images].map((img, i) => (
+                <img
+                  key={i}
+                  src={`/images/${img}`}
+                  alt={`Carrusel ${i}`}
+                  className="h-64 w-full max-w-[480px] rounded-lg object-cover"
+                />
+              ))}
             </div>
+          </div>
 
-            {/* Texto de experiencia */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Experiencia y calidad garantizada</h3>
-              <p className="text-gray-600">
-                Desde 1986 aumentando y fidelizando clientes. Más de 2000 clientes avalan nuestra trayectoria.
-                Optimizamos sus necesidades: nos consideramos sus colaboradores y por eso siempre ofrecemos la solución más adecuada.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Maquinaria de las mejores marcas del mercado',
-                  'Equipamiento para su industria y su personal',
-                  'Instalaciones y fabricaciones inox. a medida',
-                  'Consumibles, EPI´s… certificados para uso alimentario',
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start">
-                    <svg
-                      className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#de3542]"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div>
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center font-medium text-[#de3542] hover:text-red-800"
-                >
-                  Solicitar información
+          {/* TEXTO */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-gray-900">Experiencia y calidad garantizada</h3>
+            <p className="text-gray-600">
+              Desde 1986 aumentando y fidelizando clientes. Más de 2000 clientes avalan nuestra trayectoria.
+              Optimizamos sus necesidades: nos consideramos sus colaboradores y por eso siempre ofrecemos la solución más adecuada.
+            </p>
+            <ul className="space-y-3">
+              {[
+                'Maquinaria de las mejores marcas del mercado',
+                'Equipamiento para su industria y su personal',
+                'Instalaciones y fabricaciones inox. a medida',
+                'Consumibles, EPI´s… certificados para uso alimentario',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start">
                   <svg
-                    className="ml-1 h-5 w-5"
+                    className="mr-2 mt-1 h-5 w-5 flex-shrink-0 text-[#de3542]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
-                </a>
-              </div>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div>
+              <a
+                href="#contacto"
+                className="inline-flex items-center font-medium text-[#de3542] hover:text-red-800"
+              >
+                Solicitar información
+                <svg
+                  className="ml-1 h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Animación Tailwind */}
+      <style>
+        {`
+          @keyframes scroll-x {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll-x {
+            animation: scroll-x 30s linear infinite;
+          }
+        `}
+      </style>
     </section>
   );
 };
