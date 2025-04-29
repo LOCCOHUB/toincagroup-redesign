@@ -26,7 +26,7 @@ const LabSection = () => {
       title: '¿Qué necesita medir? ¿Qué necesita pesar?',
       description:
         'Disponemos de dispositivos para cualquier medición y balanzas para cualquier peso y precisión. Consúltenos, respuesta rápida garantizada.',
-      image: '/images/medicion-2.jpeg',
+      image: '/images/medicion-2.jpg',
       features: [
         'Balanzas de precisión',
         'Sistemas de medición avanzados',
@@ -38,7 +38,7 @@ const LabSection = () => {
       title: 'Extensa gama de fungibles, Reactivos y Filtros',
       description:
         'Para su consumo diario seleccionamos los mejores productos. Si necesita muestras, no hay problema, eso le dará seguridad.',
-      image: 'https://ext.same-assets.com/2935114617/1196752221.jpeg',
+      image: '/images/fungibles-2.png',
       features: [
         'Reactivos de alta calidad',
         'Filtros para laboratorio',

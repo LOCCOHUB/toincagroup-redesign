@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Marquee from 'react-fast-marquee';
 
 const Hero = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -11,6 +12,26 @@ const Hero = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const logos = [
+    'logo-arcos.png',
+    'logo-braher.png',
+    'logo-fibosa.png',
+    'logo-selecta.png',
+    'logo-pujolas.png',
+    'logo-panter.png',
+    'logo-maicnar.png',
+    'logo-memmert.png',
+    'logo-ohaus.png',
+    'logo-labbox.png',
+    'logo-congost.png',
+    'logo-zwilling.png',
+    // Repetimos algunos para que haya ancho suficiente y no salte
+    'logo-arcos.png',
+    'logo-braher.png',
+    'logo-fibosa.png',
+    'logo-selecta.png',
+  ];
 
   return (
     <section id="home" className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 bg-white">
@@ -69,7 +90,6 @@ const Hero = () => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
@@ -88,36 +108,17 @@ const Hero = () => {
           <p className="text-center text-sm font-medium uppercase text-gray-500">
             Primeras marcas que confían en nosotros
           </p>
-          <div className="relative overflow-hidden">
-            <div className="flex animate-scroll gap-12 items-center whitespace-nowrap">
-              {[
-                "logo-arcos.png",
-                "logo-braher.png",
-                "logo-fibosa.png",
-                "logo-selecta.png",
-                "logo-pujolas.png",
-                "logo-dinko.png",
-                "logo-maicnar.png",
-                "logo-martinez-gascon.png",
-                "logo-pce.png",
-                "logo-monza.png",
-                "logo-lotinox.png",
-                "logo-coc.png",
-                "logo-ilpra.png",
-                "logo-braher.png",
-                "logo-fibosa.png",
-                "logo-Retreeva.png"
-              ].map((logo, idx) => (
-                <div key={idx} className="flex-shrink-0 w-auto">
-                  <img
-                    src={`/images/${logo}`}
-                    alt={logo.replace("logo-", "").replace(".png", "")}
-                    className="h-16 w-auto object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+          <Marquee gradient={false} speed={40} pauseOnHover={true} className="gap-12">
+            {logos.map((logo, idx) => (
+              <div key={idx} className="mx-6 flex-shrink-0 w-auto">
+                <img
+                  src={`/images/${logo}`}
+                  alt={logo.replace('logo-', '').replace('.png', '')}
+                  className="h-16 w-auto object-contain"
+                />
+              </div>
+            ))}
+          </Marquee>
         </div>
       </div>
     </section>
